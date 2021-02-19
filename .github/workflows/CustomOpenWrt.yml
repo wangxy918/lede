@@ -32,7 +32,9 @@ env:
   TZ: Asia/Shanghai
 
 jobs:
-  Build Custom OpenWrt:
+  build:
+    name: Build OpenWrt firmware
+  
     runs-on: ubuntu-18.04
 
     steps:
