@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: Build Custom OpenWrt
+name: Build Custom OpenWrt x86 64
 
 on:
   repository_dispatch:
@@ -23,7 +23,7 @@ env:
   REPO_URL: https://github.com/wangxy918/lede
   REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
-  CONFIG_FILE: .config
+  CONFIG_FILE: x86-64.config
   UPLOAD_BIN_DIR: false
   UPLOAD_FIRMWARE: true
   UPLOAD_COWTRANSFER: false
@@ -33,7 +33,7 @@ env:
 
 jobs:
   build:
-    name: Build OpenWrt firmware
+    name: Build OpenWrt firmware x86 64
   
     runs-on: ubuntu-18.04
 
