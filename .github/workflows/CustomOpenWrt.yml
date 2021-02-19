@@ -32,7 +32,7 @@ env:
   TZ: Asia/Shanghai
 
 jobs:
-  build:
+  Build Custom OpenWrt:
     runs-on: ubuntu-18.04
 
     steps:
