@@ -13,11 +13,6 @@ name: Build OpenWrt x86-32
 on:
   repository_dispatch:
   workflow_dispatch:
-    inputs:
-      ssh:
-        description: 'SSH connection to Actions'
-        required: false
-        default: 'false'
 
 env:
   REPO_URL: https://github.com/wangxy918/lede
@@ -74,6 +69,7 @@ jobs:
         [ -e files ] && mv files openwrt/files
         [ -e $CONFIG_FILE ] && mv $CONFIG_FILE openwrt/.config
         cd openwrt
+        make defconfig 
         echo "Review .config file"
         cat .config
         
@@ -87,8 +83,7 @@ jobs:
     - name: Download package
       id: package
       run: |
-        cd openwrt
-        make defconfig     
+        cd openwrt  
         make download -j8
         find dl -size -1024c -exec ls -l {} \;
         find dl -size -1024c -exec rm -f {} \;
