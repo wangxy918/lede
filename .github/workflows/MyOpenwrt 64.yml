@@ -6,7 +6,7 @@
 # Blog: https://p3terx.com
 #=================================================
 
-name: BuildOpenWrt X86-64
+name: LedeOpenWrt X86-64
 
 on:
 #  release:
@@ -19,9 +19,8 @@ on:
 #      - 'amd64.config'
 #      - 'common.config'
 #      - '.github/workflows/*-amd64-*.yml'
-  schedule:
-    - cron: '0 5 * * 5'
-    
+#  schedule:
+#    - cron: '0 5 * * 5'    
   workflow_dispatch:
 
 env:
