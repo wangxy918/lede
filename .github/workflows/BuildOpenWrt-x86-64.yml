@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: MyOpenWrt x86-64
+name: BuildOpenWrt x86-64
 
 on:
   workflow_dispatch:
