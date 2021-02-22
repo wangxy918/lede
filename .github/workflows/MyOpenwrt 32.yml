@@ -6,7 +6,7 @@
 # Blog: https://p3terx.com
 #=================================================
 
-name: BuildOpenWrt X86-32
+name: MyOpenWrt X86-32
 
 on:
 #  release:
@@ -20,9 +20,8 @@ on:
 #      - 'common.config'
 #      - '.github/workflows/*-x86-*.yml'
 
-  schedule:
-    - cron: '0 1 * * 5'
-    
+#  schedule:
+#    - cron: '0 1 * * 5'
   workflow_dispatch:
 
 env:
