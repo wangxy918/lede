@@ -16,8 +16,8 @@ echo "Perpare Script [Start]"
 ##################################
 echo ""
 #echo "Adding lienol xxx feeds"
-echo "Adding passwall feeds"
-echo "src-git passwall https://github.com/xiaorouji/openwrt-passwall.git" >> feeds.conf.default
+#echo "Adding passwall feeds"
+#echo "src-git passwall https://github.com/xiaorouji/openwrt-passwall.git" >> feeds.conf.default
 
 #echo ""
 #echo "add lean xxx feeds"
