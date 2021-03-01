@@ -66,9 +66,11 @@ jobs:
     - name: Load custom configuration
       run: |
         [ -e files ] && mv files openwrt/files
-        [ -e $CONFIG_FILE ] && mv $CONFIG_FILE openwrt/.config
+        #[ -e $CONFIG_FILE ] && mv $CONFIG_FILE openwrt/.config
+        echo "Bypass make defconfig"
+        mv .config openwrt/.config
         cd openwrt
-        make defconfig 
+        #make defconfig 
         echo "Review .config file"
         cat .config
         
