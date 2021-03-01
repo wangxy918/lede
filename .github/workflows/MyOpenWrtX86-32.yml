@@ -27,7 +27,7 @@ on:
 
 env:
   TZ: Asia/Shanghai
-  REPO_URL: https://github.com/coolsnowwolf/lede
+  REPO_URL: https://github.com/wangxy918/lede
   REPO_BRANCH: master
   CONFIG_FILE: x86-32.config
   PREPARE_SH: prepare.sh
