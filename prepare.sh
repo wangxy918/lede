@@ -56,10 +56,10 @@ cd $OPENWRT_PATH
 ##################################
 # Settings
 ##################################
-#echo ""
-#echo "Configuring ..."
-# Modify default IP
-# sed -i 's/192.168.1.1/10.10.10.1/g' package/base-files/files/bin/config_generate
+echo ""
+echo "Configuring ..."
+echo "Modify default IP to 192.168.1.5"
+sed -i 's/192.168.1.1/192.168.1.5/g' package/base-files/files/bin/config_generate
 
 #if [ ! -z "$OPENWRT_ROOT_PASSWORD" ]; then
 #  echo "WARN: root password is changed from your secret, make sure you add 'OPENWRT_ROOT_PASSWORD' secret"
@@ -70,6 +70,5 @@ cd $OPENWRT_PATH
 
 # Modify default theme
 # sed -i 's/bootstrap/argon/g' package/feeds/luci/luci-base/root/etc/config/luci
-
 
 echo "Perpare Script [End]"

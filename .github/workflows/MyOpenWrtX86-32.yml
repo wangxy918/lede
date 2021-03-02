@@ -27,7 +27,7 @@ on:
 
 env:
   TZ: Asia/Shanghai
-  REPO_URL: https://github.com/coolsnowwolf/lede
+  REPO_URL: https://github.com/wangxy918/lede
   REPO_BRANCH: master
   CONFIG_FILE: x86-32.config
   PREPARE_SH: prepare.sh
@@ -37,8 +37,8 @@ env:
 #  SSH_ACTIONS: ${{ secrets.OPENWRT_ENABLE_SSH }}
   UPLOAD_BIN_DIR: true
   UPLOAD_FIRMWARE: true
-  UPLOAD_COWTRANSFER: true
-  UPLOAD_WETRANSFER: true
+  UPLOAD_COWTRANSFER: false
+  UPLOAD_WETRANSFER: false
   UPLOAD_RELEASE: true
 
 jobs:
