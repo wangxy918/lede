@@ -71,5 +71,4 @@ sed -i 's/192.168.1.1/192.168.1.5/g' package/base-files/files/bin/config_generat
 # Modify default theme
 # sed -i 's/bootstrap/argon/g' package/feeds/luci/luci-base/root/etc/config/luci
 
-
 echo "Perpare Script [End]"
