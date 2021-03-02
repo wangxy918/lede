@@ -62,7 +62,13 @@ jobs:
 
     - name: Install feeds
       run: cd openwrt && ./scripts/feeds install -a
-
+      
+    - name: Modify default IP
+      run: |
+        echo "Modify default IP to 192.168.1.5"
+        cd openwrt
+        sed -i 's/192.168.1.1/192.168.1.5/g' package/base-files/files/bin/config_generate
+        
     - name: Load custom configuration
       run: |
         #[ -e files ] && mv files openwrt/files
