@@ -75,6 +75,12 @@ jobs:
         echo "Review .config file"
         cat .config
 
+    - name: Modify default configuration
+      run: |
+        echo "Modify default IP to 192.168.1.8"
+        cd openwrt
+        sed -i 's/192.168.1.1/192.168.1.5/g' package/base-files/files/bin/config_generate
+
     - name: Download package
       id: package
       run: |
